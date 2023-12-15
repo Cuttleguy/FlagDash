@@ -37,5 +37,5 @@ data_merry = buffer_create_from_vertex_buffer(vb_merry, buffer_fixed, 1);
 //vertex_freeze(vb_merry);
 var map = instance_create_depth(500, 500, depth, GameObject);
 map.model = load_obj_mtl("map.obj","map.mtl");
-map.z = 96;
+map.z = 0;
 tilemap_vb = tilemap_to_vertex_buffer("GroundTiles", vertex_format);
