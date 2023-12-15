@@ -13,3 +13,13 @@
 	
 //	show_debug_message($"Vertex buffer modification took {(get_timer() - t_start) / 1000} ms");
 //}
+if(keyboard_check_pressed(vk_tab)){
+	var vertex_data = buffer_create_from_vertex_buffer(map.model, buffer_fixed, 1);
+
+//here You put file name of vbuff You would have
+	var filename = get_save_filename("Vertex buffers|*.vbuff", "wall512x256x64.vbuff");
+
+	buffer_save(vertex_data, filename);
+
+	buffer_delete(vertex_data);	
+}
