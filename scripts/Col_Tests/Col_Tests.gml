@@ -413,7 +413,7 @@ function ColTestMesh(vbuff) constructor {
                 buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 0, buffer_f32),
                 buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 4, buffer_f32),
                 buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 8, buffer_f32)
-            ),
+            )
         );
     }
     buffer_delete(data);
