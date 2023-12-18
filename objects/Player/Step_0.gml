@@ -33,6 +33,16 @@ if (window_mouse_get_locked()) {
         dx += dcos(look_dir) * move_speed;
         dy -= dsin(look_dir) * move_speed;
     }
+	
+	if (keyboard_check_pressed(vk_space) {
+		zspeed = 6;
+	}
+	
+	z+=zspeed;
+	
+	zspeed -= 0.5;
+	
+	
     
     x += dx;
     y += dy;

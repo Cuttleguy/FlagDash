@@ -1,7 +1,6 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
-    {"name":"load_obj_mtl","order":16,"path":"scripts/load_obj_mtl/load_obj_mtl.yy",},
     {"name":"scr_draw_all_the_stuff","order":2,"path":"scripts/scr_draw_all_the_stuff/scr_draw_all_the_stuff.yy",},
     {"name":"spr_grass","order":3,"path":"sprites/spr_grass/spr_grass.yy",},
     {"name":"vertex_add_point","order":12,"path":"scripts/vertex_add_point/vertex_add_point.yy",},
@@ -12,6 +11,7 @@
     {"name":"tilemap_to_vertex_buffer","order":10,"path":"scripts/tilemap_to_vertex_buffer/tilemap_to_vertex_buffer.yy",},
     {"name":"spr_main","order":8,"path":"sprites/spr_main/spr_main.yy",},
     {"name":"GameObject","order":14,"path":"objects/GameObject/GameObject.yy",},
+    {"name":"load_obj_mtl","order":16,"path":"scripts/load_obj_mtl/load_obj_mtl.yy",},
     {"name":"GameObject_1","order":15,"path":"objects/GameObject_1/GameObject_1.yy",},
     {"name":"Camera","order":6,"path":"objects/Camera/Camera.yy",},
     {"name":"Player","order":7,"path":"objects/Player/Player.yy",},

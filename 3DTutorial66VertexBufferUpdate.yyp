@@ -28,7 +28,6 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
-    {"id":{"name":"load_obj_mtl","path":"scripts/load_obj_mtl/load_obj_mtl.yy",},},
     {"id":{"name":"scr_draw_all_the_stuff","path":"scripts/scr_draw_all_the_stuff/scr_draw_all_the_stuff.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
@@ -39,6 +38,7 @@
     {"id":{"name":"tilemap_to_vertex_buffer","path":"scripts/tilemap_to_vertex_buffer/tilemap_to_vertex_buffer.yy",},},
     {"id":{"name":"spr_main","path":"sprites/spr_main/spr_main.yy",},},
     {"id":{"name":"GameObject","path":"objects/GameObject/GameObject.yy",},},
+    {"id":{"name":"load_obj_mtl","path":"scripts/load_obj_mtl/load_obj_mtl.yy",},},
     {"id":{"name":"GameObject_1","path":"objects/GameObject_1/GameObject_1.yy",},},
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
