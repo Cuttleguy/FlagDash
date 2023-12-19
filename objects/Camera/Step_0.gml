@@ -23,3 +23,4 @@ if(keyboard_check_pressed(vk_tab)){
 
 	buffer_delete(vertex_data);	
 }
+col1.update()

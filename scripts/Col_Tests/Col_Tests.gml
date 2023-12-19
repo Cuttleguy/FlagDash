@@ -161,7 +161,7 @@ function ColTestTriangle() constructor {
     // this is never deleted so it's technically a memory leak, but it should
     // be fine as long as you don't try to spawn half a billion of them
     self.vbuff = vertex_create_buffer();
-    vertex_begin(vbuff, obj_demo.vertex_format);
+    vertex_begin(vbuff, Camera.vertex_format);
     vertex_position_3d(vbuff, p1.x, p1.y, p1.z);
     vertex_normal(vbuff, nx, ny, nz);
     vertex_colour(vbuff, 0xEC7D15, 1);
@@ -315,13 +315,15 @@ function ColTestCapsule(vbuff_end, vbuff_middle) constructor {
     };
     self.draw = function() {
         var vbuff = vertex_create_buffer();
-        vertex_begin(vbuff, obj_demo.vertex_format);
+        vertex_begin(vbuff, Camera.vertex_format);
         vertex_position_3d(vbuff, self.data.line.start.x, self.data.line.start.y, self.data.line.start.z);
         vertex_normal(vbuff, 0, 0, 1);
         vertex_colour(vbuff, c_lime, 1);
+		vertex_texcoord(vbuff,0,1)
         vertex_position_3d(vbuff, self.data.line.finish.x, self.data.line.finish.y, self.data.line.finish.z);
         vertex_normal(vbuff, 0, 0, 1);
         vertex_colour(vbuff, c_lime, 1);
+		vertex_texcoord(vbuff,0,1)
         vertex_end(vbuff);
         vertex_submit(vbuff, pr_linelist, -1);
         vertex_delete_buffer(vbuff);
@@ -375,7 +377,7 @@ function ColTestLine(vbuff) constructor {
     };
     self.draw = function() {
         var vbuff = vertex_create_buffer();
-        vertex_begin(vbuff, obj_demo.vertex_format);
+        vertex_begin(vbuff, Camera.vertex_format);
         vertex_position_3d(vbuff, self.data.start.x, self.data.start.y, self.data.start.z);
         vertex_normal(vbuff, 0, 0, 1);
         vertex_colour(vbuff, c_lime, 1);
