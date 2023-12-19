@@ -5,7 +5,7 @@
     {"name":"spr_grass","order":3,"path":"sprites/spr_grass/spr_grass.yy",},
     {"name":"vertex_add_point","order":12,"path":"scripts/vertex_add_point/vertex_add_point.yy",},
     {"name":"load_model","order":11,"path":"scripts/load_model/load_model.yy",},
-    {"name":"ts_main","order":9,"path":"tilesets/ts_main/ts_main.yy",},
+    {"name":"tileset_main","order":9,"path":"tilesets/tileset_main/tileset_main.yy",},
     {"name":"fnt_game","order":1,"path":"fonts/fnt_game/fnt_game.yy",},
     {"name":"shd_basic_3d_stuff","order":4,"path":"shaders/shd_basic_3d_stuff/shd_basic_3d_stuff.yy",},
     {"name":"tilemap_to_vertex_buffer","order":10,"path":"scripts/tilemap_to_vertex_buffer/tilemap_to_vertex_buffer.yy",},

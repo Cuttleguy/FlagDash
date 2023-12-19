@@ -19,7 +19,7 @@ camera_set_view_mat(camera, view_mat);
 camera_set_proj_mat(camera, proj_mat);
 camera_apply(camera);
 
-vertex_submit(tilemap_vb, pr_trianglelist, tileset_get_texture(ts_main));
+vertex_submit(tilemap_vb, pr_trianglelist, tileset_get_texture(tileset_main));
 
 shader_set(shd_basic_3d_stuff);
 shader_set_uniform_f(shader_get_uniform(shd_basic_3d_stuff, "lightDirection"), 1, 1, -1);
