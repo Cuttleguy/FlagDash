@@ -76,6 +76,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"GameObject","path":"objects/GameObject/GameObject.yy",},},
     {"id":{"name":"Col_Shape_AABB","path":"scripts/Col_Shape_AABB/Col_Shape_AABB.yy",},},
+    {"id":{"name":"load_obj_mtl","path":"scripts/load_obj_mtl/load_obj_mtl.yy",},},
     {"id":{"name":"GameObject_1","path":"objects/GameObject_1/GameObject_1.yy",},},
     {"id":{"name":"fnt_demo","path":"fonts/fnt_demo/fnt_demo.yy",},},
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},

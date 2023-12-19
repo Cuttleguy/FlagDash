@@ -34,6 +34,7 @@
     {"name":"obj_demo","order":1,"path":"objects/obj_demo/obj_demo.yy",},
     {"name":"Room1","order":19,"path":"rooms/Room1/Room1.yy",},
     {"name":"GameObject","order":14,"path":"objects/GameObject/GameObject.yy",},
+    {"name":"load_obj_mtl","order":16,"path":"scripts/load_obj_mtl/load_obj_mtl.yy",},
     {"name":"GameObject_1","order":15,"path":"objects/GameObject_1/GameObject_1.yy",},
     {"name":"fnt_demo","order":4,"path":"fonts/fnt_demo/fnt_demo.yy",},
     {"name":"Camera","order":6,"path":"objects/Camera/Camera.yy",},
