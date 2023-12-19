@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Shapes",
-    "path": "folders/Collision Stuff/Shapes.yy",
+    "name": "Collision Stuff",
+    "path": "folders/Collision Stuff.yy",
   },
 }

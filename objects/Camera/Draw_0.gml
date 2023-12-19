@@ -28,3 +28,4 @@ scr_draw_all_the_stuff();
 
 shader_reset();
 col1.draw()
+_map_collider.draw()
