@@ -41,7 +41,7 @@ if (window_mouse_get_locked()) {
 
 //gravity
 
-if z<9 and zspeed<9 and (keyboard_check_pressed(vk_space)) {
+if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
 	zspeed = 6;
 }
 
