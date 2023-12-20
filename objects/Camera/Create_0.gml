@@ -35,7 +35,41 @@ vb_merry = load_model("merry.d3d");
 
 data_merry = buffer_create_from_vertex_buffer(vb_merry, buffer_fixed, 1);
 //vertex_freeze(vb_merry);
-var map = instance_create_depth(500, 500, depth, GameObject);
+map = instance_create_depth(500, 500, depth, GameObject);
 map.model = load_obj_mtl("map.obj","map.mtl");
-map.z = 96;
+
+map.z = 1;
+var _map_collider=new ColTestMesh(map.model)
+var buffer = buffer_load("shapes/capsule_middle.vbuff");
+capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
+buffer_delete(buffer);
+
+var buffer = buffer_load("shapes/capsule_end.vbuff");
+capsule_end = vertex_create_buffer_from_buffer(buffer, vertex_format);
+buffer_delete(buffer);
+col1=new ColTestCapsule(capsule_end,capsule_middle)
 tilemap_vb = tilemap_to_vertex_buffer("GroundTiles", vertex_format);
+//var buffer = buffer_load("meshes/maps.vbuff");
+//var vertex_size = 28;
+//tree_vertices = [];
+//for (var i = 0, n = buffer_get_size(buffer); i < n; i += vertex_size * 3) {
+//    array_push(tree_vertices, new ColTriangle(
+//        new Vector3(
+//            buffer_peek(buffer, i + 0 * vertex_size + 0, buffer_f32),
+//            buffer_peek(buffer, i + 0 * vertex_size + 4, buffer_f32),
+//            buffer_peek(buffer, i + 0 * vertex_size + 8, buffer_f32)
+//        ),
+//        new Vector3(
+//            buffer_peek(buffer, i + 1 * vertex_size + 0, buffer_f32),
+//            buffer_peek(buffer, i + 1 * vertex_size + 4, buffer_f32),
+//            buffer_peek(buffer, i + 1 * vertex_size + 8, buffer_f32)
+//        ),
+//        new Vector3(
+//            buffer_peek(buffer, i + 2 * vertex_size + 0, buffer_f32),
+//            buffer_peek(buffer, i + 2 * vertex_size + 4, buffer_f32),
+//            buffer_peek(buffer, i + 2 * vertex_size + 8, buffer_f32)
+//        )
+//    ));
+//}
+//tree = vertex_create_buffer_from_buffer(buffer, vertex_format);
+//buffer_delete(buffer);
