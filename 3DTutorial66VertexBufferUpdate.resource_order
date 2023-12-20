@@ -1,16 +1,4 @@
 {
-  "FolderOrderSettings": [
-    {"name":"Shapes","order":9,"path":"folders/Collision Stuff/Shapes.yy",},
-  ],
-  "ResourceOrderSettings": [
-    {"name":"Col_Transformed_Model","order":10,"path":"scripts/Col_Transformed_Model/Col_Transformed_Model.yy",},
-    {"name":"Col_Matrix","order":7,"path":"scripts/Col_Matrix/Col_Matrix.yy",},
-    {"name":"Col_SAT_Stuff","order":8,"path":"scripts/Col_SAT_Stuff/Col_SAT_Stuff.yy",},
-    {"name":"Col_Camera_Frustum","order":6,"path":"scripts/Col_Camera_Frustum/Col_Camera_Frustum.yy",},
-    {"name":"Col_Helper_Functions","order":3,"path":"scripts/Col_Helper_Functions/Col_Helper_Functions.yy",},
-    {"name":"Col_World","order":4,"path":"scripts/Col_World/Col_World.yy",},
-    {"name":"Col_Vector","order":5,"path":"scripts/Col_Vector/Col_Vector.yy",},
-    {"name":"Col_Octree","order":2,"path":"scripts/Col_Octree/Col_Octree.yy",},
-    {"name":"Col_Heightmap","order":1,"path":"scripts/Col_Heightmap/Col_Heightmap.yy",},
-  ],
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [],
 }
