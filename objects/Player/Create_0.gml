@@ -8,3 +8,5 @@ max_hp = 10;
 current_hp = 10;
 
 window_mouse_set_locked(true);
+
+zspeed = 0;
