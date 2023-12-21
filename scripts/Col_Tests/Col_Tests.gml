@@ -430,24 +430,24 @@ function ColTestMesh(vbuff) constructor {
         var dy = 0;
         var dz = 0;
         
-        if (keyboard_check(vk_left)) {
-            dx--;
-        }
-        if (keyboard_check(vk_right)) {
-            dx++;
-        }
-        if (keyboard_check(vk_up)) {
-            dy--;
-        }
-        if (keyboard_check(vk_down)) {
-            dy++;
-        }
-        if (keyboard_check(vk_pageup)) {
-            dz--;
-        }
-        if (keyboard_check(vk_pagedown)) {
-            dz++;
-        }
+        //if (keyboard_check(vk_left)) {
+        //    dx--;
+        //}
+        //if (keyboard_check(vk_right)) {
+        //    dx++;
+        //}
+        //if (keyboard_check(vk_up)) {
+        //    dy--;
+        //}
+        //if (keyboard_check(vk_down)) {
+        //    dy++;
+        //}
+        //if (keyboard_check(vk_pageup)) {
+        //    dz--;
+        //}
+        //if (keyboard_check(vk_pagedown)) {
+        //    dz++;
+        //}
         self.offset.x += dx;
         self.offset.y += dy;
         self.offset.z += dz;
