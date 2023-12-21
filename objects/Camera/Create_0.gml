@@ -36,10 +36,10 @@ vb_merry = load_model("merry.d3d");
 data_merry = buffer_create_from_vertex_buffer(vb_merry, buffer_fixed, 1);
 //vertex_freeze(vb_merry);
 map = instance_create_depth(500, 500, depth, GameObject);
-map.model = load_obj_mtl("map.obj","map.mtl");
+map.model = load_obj("map.obj","map.mtl");
 
 map.z = 1;
-var _map_collider=new ColTestMesh(map.model)
+_map_collider=new ColTestMesh(map.model)
 var buffer = buffer_load("shapes/capsule_middle.vbuff");
 capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
 buffer_delete(buffer);

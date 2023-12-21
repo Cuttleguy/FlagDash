@@ -1,9 +1,68 @@
 /// @param filename
-function load_obj(argument0) {
+/// @param mtl-name
+function load_obj(argument0, argument1) {
 
 	// Open the file
 	var filename = argument0;
+	var mtlname = argument1;
+
 	var obj_file = file_text_open_read(filename);
+	var mtl_file = file_text_open_read(mtlname);
+
+	var mtl_name = "None";
+	var active_mtl = "None";
+
+	// Create ds_maps to link the color/alpha/other attributes to the material name
+
+	var mtl_alpha = ds_map_create();
+	var mtl_color = ds_map_create();
+
+	// Set the default attributes
+
+	ds_map_add(mtl_alpha, "None", 1);
+	ds_map_add(mtl_color, "None", c_white);
+
+	// For each line in the mtl file
+
+	while(not file_text_eof(mtl_file)){
+		var line = file_text_read_string(mtl_file);
+		file_text_readln(mtl_file);
+		// Split each line around the space character
+		var terms, index;
+		index = 0;
+		terms[0] = "";
+		terms[string_count(line, " ")] = "";
+		for (var i = 1; i <= string_length(line); i++){
+			if (string_char_at(line, i) == " "){
+				index++;
+				terms[index] = "";
+			} else {
+				terms[index] = terms[index]+string_char_at(line, i);
+			}
+		}
+		switch(terms[0]){
+			case "newmtl":
+				// Set the material name
+				mtl_name = terms[1];
+				break;
+			case "Kd":
+				// Diffuse color (the color we're concerned with)
+				var red = real(terms[1])*255;
+				var green = real(terms[2])*255;
+				var blue = real(terms[3])*255;
+				var color = make_color_rgb(red, green, blue);
+				ds_map_set(mtl_color, mtl_name, color);
+				break;
+			case "d":
+				// "dissolved" (alpha)
+				var alpha = real(terms[1]);
+				ds_map_set(mtl_alpha, mtl_name, alpha);
+				break;
+			default:
+				// There are way more available attributes in mtl files, but we're only concerned with these three (two)
+				break;
+		}
+	}
 
 	// Create the vertex buffer
 	var model = vertex_create_buffer();
@@ -57,7 +116,7 @@ function load_obj(argument0) {
 				break;
 			case "f":
 				// Split each term around the slash character
-				for (var n = 1; n<= 3; n++){
+				for (var n = 1; n <= 3; n++){
 					var data, index;
 					index = 0;
 					data = array_create(string_count(terms[n], "/") + 1, "");
@@ -73,27 +132,38 @@ function load_obj(argument0) {
 					var xx = ds_list_find_value(vertex_x, real(data[0]) - 1);
 					var yy = ds_list_find_value(vertex_y, real(data[0]) - 1);
 					var zz = ds_list_find_value(vertex_z, real(data[0]) - 1);
-					//var xtex = ds_list_find_value(vertex_xtex, real(data[1]) - 1);
-					//var ytex = ds_list_find_value(vertex_ytex, real(data[1]) - 1);
-					//var nx = ds_list_find_value(vertex_nx, real(data[2]) - 1);
-					//var ny = ds_list_find_value(vertex_ny, real(data[2]) - 1);
-					//var nz = ds_list_find_value(vertex_nz, real(data[2]) - 1);
+					var xtex = ds_list_find_value(vertex_xtex, real(data[1]) - 1);
+					var ytex = ds_list_find_value(vertex_ytex, real(data[1]) - 1);
+					var nx = ds_list_find_value(vertex_nx, real(data[2]) - 1);
+					var ny = ds_list_find_value(vertex_ny, real(data[2]) - 1);
+					var nz = ds_list_find_value(vertex_nz, real(data[2]) - 1);
+				
+					// If the material exists in the materials map(s), set the vertex's color and alpha
+					// (and other attributes, if you want to use them) based on the material
+
+					var color = c_white;
+					var alpha = 1;
+					if (ds_map_exists(mtl_color, active_mtl)){
+						color = ds_map_find_value(mtl_color, active_mtl);
+					}
+					if (ds_map_exists(mtl_alpha, active_mtl)){
+						alpha = ds_map_find_value(mtl_alpha, active_mtl);
+					}
 				
 					// Optional: swap the y and z positions (useful if you used the default Blender export settings)
-					//var t = yy;
-					//yy = zz;
-					//zz = t;
-					//// If you do that you'll also need to swap the normals
-					//var t = ny;
-					//ny = nz;
-					//nz = t;
+					var t = yy;
+					yy = zz;
+					zz = t;
 				
 					// Add the data to the vertex buffers
 					vertex_position_3d(model, xx, yy, zz);
-					//vertex_normal(model, nx, ny, nz);
-					vertex_color(model, c_white, 1);
-					//vertex_texcoord(model, xtex, ytex);
+					vertex_normal(model, nx, ny, nz);
+					vertex_color(model, color, alpha);
+					vertex_texcoord(model, xtex, ytex);
 				}
+				break;
+			case "usemtl":
+				active_mtl = terms[1];
 				break;
 			default:
 				// There are a few other things you can find in an obj file that I haven't covered here (but may in the future)
@@ -108,16 +178,19 @@ function load_obj(argument0) {
 	ds_list_destroy(vertex_x);
 	ds_list_destroy(vertex_y);
 	ds_list_destroy(vertex_z);
-	//ds_list_destroy(vertex_nx);
-	//ds_list_destroy(vertex_ny);
-	//ds_list_destroy(vertex_nz);
-	//ds_list_destroy(vertex_xtex);
-	//ds_list_destroy(vertex_ytex);
+	ds_list_destroy(vertex_nx);
+	ds_list_destroy(vertex_ny);
+	ds_list_destroy(vertex_nz);
+	ds_list_destroy(vertex_xtex);
+	ds_list_destroy(vertex_ytex);
+
+	ds_map_destroy(mtl_alpha);
+	ds_map_destroy(mtl_color);
 
 	file_text_close(obj_file);
+	file_text_close(mtl_file);
 
 	return model;
-
 
 
 }
