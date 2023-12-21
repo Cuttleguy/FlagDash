@@ -1,4 +1,7 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"Spr_ts","order":2,"path":"sprites/Spr_ts/Spr_ts.yy",},
+    {"name":"TileSet1","order":1,"path":"tilesets/TileSet1/TileSet1.yy",},
+  ],
 }

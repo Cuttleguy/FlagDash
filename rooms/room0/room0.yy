@@ -19,7 +19,7 @@
 10,8,0,2,3,4,10,10,0,0,-42,10,8,0,12,13,14,10,10,0,0,-12,10,1,21,-29,10,8,0,22,23,24,10,10,0,0,-3,10,3,2,3,4,-22,10,3,2,3,4,-6,10,
 1,41,-4,10,1,0,-4,10,-3,0,-3,10,4,12,13,14,21,-21,10,3,12,13,14,-11,10,1,0,-4,10,-2,0,7,10,41,10,10,22,23,24,-22,10,3,22,23,24,-3,10,-2,21,-6,
 10,1,0,-4,10,-2,0,-12,10,1,21,-3,10,1,41,-26,10,-2,0,-3,10,-2,0,-44,10,1,0,-3,10,-2,0,-41,10,9,41,10,10,0,0,10,10,0,0,-45,10,3,0,10,10,-3,
-0,-44,10,1,0,-3,10,-2,0,-27,10,],"TileDataFormat":1,},"tilesetId":{"name":"ts_main","path":"tilesets/ts_main/ts_main.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
+0,-44,10,1,0,-3,10,-2,0,-27,10,],"TileDataFormat":1,},"tilesetId":null,"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14D2ACA0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Camera","path":"objects/Camera/Camera.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
