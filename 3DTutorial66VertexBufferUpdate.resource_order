@@ -2,7 +2,9 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"Spr_ts","order":2,"path":"sprites/Spr_ts/Spr_ts.yy",},
+    {"name":"Map2","order":4,"path":"rooms/Map2/Map2.yy",},
     {"name":"TileSet1","order":1,"path":"tilesets/TileSet1/TileSet1.yy",},
     {"name":"PlayerCollider","order":3,"path":"scripts/PlayerCollider/PlayerCollider.yy",},
+    {"name":"Map3","order":5,"path":"rooms/Map3/Map3.yy",},
   ],
 }

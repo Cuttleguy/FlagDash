@@ -52,6 +52,7 @@
     {"id":{"name":"Col_Matrix","path":"scripts/Col_Matrix/Col_Matrix.yy",},},
     {"id":{"name":"load_obj_mtl","path":"scripts/load_obj_mtl/load_obj_mtl.yy",},},
     {"id":{"name":"Col_Shape_Sphere","path":"scripts/Col_Shape_Sphere/Col_Shape_Sphere.yy",},},
+    {"id":{"name":"Map2","path":"rooms/Map2/Map2.yy",},},
     {"id":{"name":"scr_draw_all_the_stuff","path":"scripts/scr_draw_all_the_stuff/scr_draw_all_the_stuff.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
@@ -66,6 +67,7 @@
     {"id":{"name":"shd_basic_3d_stuff","path":"shaders/shd_basic_3d_stuff/shd_basic_3d_stuff.yy",},},
     {"id":{"name":"Col_Shape_Capsule","path":"scripts/Col_Shape_Capsule/Col_Shape_Capsule.yy",},},
     {"id":{"name":"PlayerCollider","path":"scripts/PlayerCollider/PlayerCollider.yy",},},
+    {"id":{"name":"Map3","path":"rooms/Map3/Map3.yy",},},
     {"id":{"name":"Col_Helper_Functions","path":"scripts/Col_Helper_Functions/Col_Helper_Functions.yy",},},
     {"id":{"name":"obj_demo_1","path":"objects/obj_demo_1/obj_demo_1.yy",},},
     {"id":{"name":"tilemap_to_vertex_buffer","path":"scripts/tilemap_to_vertex_buffer/tilemap_to_vertex_buffer.yy",},},
@@ -95,6 +97,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Map1","path":"rooms/Map1/Map1.yy",},},
     {"roomId":{"name":"Testmap","path":"rooms/Testmap/Testmap.yy",},},
+    {"roomId":{"name":"Map2","path":"rooms/Map2/Map2.yy",},},
+    {"roomId":{"name":"Map3","path":"rooms/Map3/Map3.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
