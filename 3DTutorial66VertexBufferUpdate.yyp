@@ -74,7 +74,7 @@
     {"id":{"name":"Col_Shape_Triangle","path":"scripts/Col_Shape_Triangle/Col_Shape_Triangle.yy",},},
     {"id":{"name":"Col_Octree","path":"scripts/Col_Octree/Col_Octree.yy",},},
     {"id":{"name":"obj_demo","path":"objects/obj_demo/obj_demo.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Testroom","path":"rooms/Testroom/Testroom.yy",},},
     {"id":{"name":"GameObject","path":"objects/GameObject/GameObject.yy",},},
     {"id":{"name":"Col_Shape_AABB","path":"scripts/Col_Shape_AABB/Col_Shape_AABB.yy",},},
     {"id":{"name":"GameObject_1","path":"objects/GameObject_1/GameObject_1.yy",},},
@@ -89,11 +89,11 @@
     {"id":{"name":"shd_demo","path":"shaders/shd_demo/shd_demo.yy",},},
     {"id":{"name":"load_obj","path":"scripts/load_obj/load_obj.yy",},},
     {"id":{"name":"Col_Spatial_Hash","path":"scripts/Col_Spatial_Hash/Col_Spatial_Hash.yy",},},
-    {"id":{"name":"room0","path":"rooms/room0/room0.yy",},},
+    {"id":{"name":"Room","path":"rooms/Room/Room.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"room0","path":"rooms/room0/room0.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room","path":"rooms/Room/Room.yy",},},
+    {"roomId":{"name":"Testroom","path":"rooms/Testroom/Testroom.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
