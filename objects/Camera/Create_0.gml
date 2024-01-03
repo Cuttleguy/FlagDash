@@ -27,7 +27,7 @@ vertex_format = vertex_format_end();
 #endregion
 
 instance_create_depth(0, 0, 0, Player);
-playerCollider=PlayerCollider(new Vector3(0,5,0),new Vector3(0,0,0),5)
+_player_collider=new PlayerCollider(new Vector3(0,0,1),new Vector3(0,0,5),5)
 
 znear = 1;
 zfar = 32000;
@@ -48,7 +48,7 @@ buffer_delete(buffer);
 var buffer = buffer_load("shapes/capsule_end.vbuff");
 capsule_end = vertex_create_buffer_from_buffer(buffer, vertex_format);
 buffer_delete(buffer);
-col1=new ColTestCapsule(capsule_end,capsule_middle)
+//col1=new ColTestCapsule(capsule_end,capsule_middle)
 tilemap_vb = tilemap_to_vertex_buffer("GroundTiles", vertex_format);
 //var buffer = buffer_load("meshes/maps.vbuff");
 //var vertex_size = 28;

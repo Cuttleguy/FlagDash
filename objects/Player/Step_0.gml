@@ -36,6 +36,11 @@ if (window_mouse_get_locked()) {
   
     x += dx;
     y += dy;
+	Camera._player_collider.line.start.x+=dx
+	Camera._player_collider.line.finish.x+=dx
+	Camera._player_collider.line.start.y+=dy
+	Camera._player_collider.line.finish.y+=dx
+	
     #endregion
 }
 
