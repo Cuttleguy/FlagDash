@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "Room",
+  "name": "Map1",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_14D2ACA0","path":"rooms/Room/Room.yy",},
+    {"name":"inst_14D2ACA0","path":"rooms/Map1/Map1.yy",},
   ],
   "isDnd": false,
   "layers": [

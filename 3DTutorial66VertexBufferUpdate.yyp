@@ -89,10 +89,10 @@
     {"id":{"name":"shd_demo","path":"shaders/shd_demo/shd_demo.yy",},},
     {"id":{"name":"load_obj","path":"scripts/load_obj/load_obj.yy",},},
     {"id":{"name":"Col_Spatial_Hash","path":"scripts/Col_Spatial_Hash/Col_Spatial_Hash.yy",},},
-    {"id":{"name":"Room","path":"rooms/Room/Room.yy",},},
+    {"id":{"name":"Map1","path":"rooms/Map1/Map1.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room","path":"rooms/Room/Room.yy",},},
+    {"roomId":{"name":"Map1","path":"rooms/Map1/Map1.yy",},},
     {"roomId":{"name":"Testroom","path":"rooms/Testroom/Testroom.yy",},},
   ],
   "templateType": null,
