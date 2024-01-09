@@ -27,4 +27,4 @@ shader_set_uniform_f(shader_get_uniform(shd_basic_3d_stuff, "lightDirection"), 1
 scr_draw_all_the_stuff();
 
 shader_reset();
-//col1.draw()
+col1.draw()
