@@ -26,8 +26,8 @@ vertex_format_add_color();
 vertex_format = vertex_format_end();
 #endregion
 
-instance_create_depth(0, 0, 0, Player);
-_player_collider=new PlayerCollider(new Vector3(0,0,1),new Vector3(0,0,5),5)
+instance_create_depth(0, 0, 5, Player);
+_player_collider=new PlayerCollider(new Vector3(0,0,5),new Vector3(0,0,10),5)
 
 znear = 1;
 zfar = 32000;
@@ -40,7 +40,30 @@ map = instance_create_depth(0, 0, depth, GameObject);
 map.model = load_obj("map.obj","map.mtl");
 
 map.z = 1;
-_map_collider=new ColTestMesh(map.model)
+var data = buffer_create_from_vertex_buffer(map.model, buffer_fixed, 1);
+var vertex_size = 28;
+var triangle_array = array_create(buffer_get_size(data) / vertex_size / 3);
+for (var i = 0, n = array_length(triangle_array); i < n; i++) {
+        triangle_array[i] = new ColTriangle(
+            new Vector3(
+                buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 0, buffer_f32),
+                buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 4, buffer_f32),
+                buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 8, buffer_f32)
+            ),
+            new Vector3(
+                buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 0, buffer_f32),
+                buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 4, buffer_f32),
+                buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 8, buffer_f32)
+            ),
+            new Vector3(
+                buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 0, buffer_f32),
+                buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 4, buffer_f32),
+                buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 8, buffer_f32)
+            )
+        );
+    }
+    buffer_delete(data);
+_map_collider=new ColMesh(triangle_array)
 var buffer = buffer_load("shapes/capsule_middle.vbuff");
 capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
 buffer_delete(buffer);
