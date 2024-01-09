@@ -51,8 +51,7 @@ if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
 }
 
 z+=zspeed;
-Camera._player_collider.line.start.z+=zspeed
-Camera._player_collider.line.finish.z+=zspeed
+
 if (z<0) {
 	z = 0
 	zspeed = 0

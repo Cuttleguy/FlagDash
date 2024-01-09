@@ -1,5 +1,5 @@
 //show_debug_log(true)
 
-//_map_collider.update()
+_map_collider.update()
 
 
