@@ -448,9 +448,9 @@ function ColTestMesh(vbuff) constructor {
         //if (keyboard_check(vk_pagedown)) {
         //    dz++;
         //}
-        self.offset.x += dx;
-        self.offset.y += dy;
-        self.offset.z += dz;
+        //self.offset.x += dx;
+        //self.offset.y += dy;
+        //self.offset.z += dz;
         
         if (point_distance_3d(0, 0, 0, dx, dy, dz) > 0) {
             for (var i = 0, n = array_length(self.data.triangles); i < n; i++) {
