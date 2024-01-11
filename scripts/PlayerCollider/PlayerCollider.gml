@@ -176,21 +176,17 @@ function PlayerCollider(start, finish, radius) constructor {
         return self.line.GetMin().Add(self.radius);
     };
 	self.update = function() {
-        if (keyboard_check(ord("A"))) {
-            self.line.start.x--;
-			self.line.finish.x--;
+        if (keyboard_check(vk_a)) {
+            self.position.x--;
         }
-        if (keyboard_check(ord("D"))) {
-            self.line.start.x++;
-			self.line.finish.x++
+        if (keyboard_check(vk_d)) {
+            self.position.x++;
         }
-        if (keyboard_check(ord("W"))) {
-            self.line.start.y--;
-			self.line.finish.y--;
+        if (keyboard_check(vk_w)) {
+            self.position.y--;
         }
-        if (keyboard_check(ord("S"))) {
-            self.line.start.y++;
-			self.line.finish.y++
+        if (keyboard_check(vk_s)) {
+            self.position.y++;
         }
         //if (keyboard_check(vk_pageup)) {
         //    self.data.position.z--;
