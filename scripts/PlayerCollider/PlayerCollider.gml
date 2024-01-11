@@ -175,13 +175,6 @@ function PlayerCollider(start, finish, radius) constructor {
     static GetMax = function() {
         return self.line.GetMin().Add(self.radius);
     };
-	self.set_position=function(newx,newy,newz){
-		self.line.start.x=newx
-		self.line.finish.x=newx
-		self.line.start.y=newy
-		self.line.finish.y=newy
-		
-	}
 	self.update = function() {
         if (keyboard_check(ord("A"))) {
             self.line.start.x--;
