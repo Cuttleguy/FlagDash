@@ -175,24 +175,45 @@ function PlayerCollider(start, finish, radius) constructor {
     static GetMax = function() {
         return self.line.GetMin().Add(self.radius);
     };
-	self.update = function() {
-        if (keyboard_check(vk_a)) {
-            self.position.x--;
-        }
-        if (keyboard_check(vk_d)) {
-            self.position.x++;
-        }
-        if (keyboard_check(vk_w)) {
-            self.position.y--;
-        }
-        if (keyboard_check(vk_s)) {
-            self.position.y++;
-        }
-        //if (keyboard_check(vk_pageup)) {
-        //    self.data.position.z--;
-        //}
-        //if (keyboard_check(vk_pagedown)) {
-        //    self.data.position.z++;
-        //}
-    };
+	self.set_position = function(newx,newy,newz){
+		self.line.start.x=newx
+		self.line.finish.x=newx
+		self.line.start.y=newy
+		self.line.finish.y=newy
+	}
+	//self.update = function() {
+    //    if (keyboard_check(vk_a)) {
+    //        self.position.x--;
+    //    }
+    //    if (keyboard_check(vk_d)) {
+    //        self.position.x++;
+    //    }
+    //    if (keyboard_check(vk_w)) {
+    //        self.position.y--;
+    //    }
+    //    if (keyboard_check(vk_s)) {
+    //        self.position.y++;
+    //    }
+    //    //if (keyboard_check(vk_pageup)) {
+    //    //    self.data.position.z--;
+    //    //}
+    //    //if (keyboard_check(vk_pagedown)) {
+    //    //    self.data.position.z++;
+    //    //}
+    //};
+	self.draw = function() {
+        var vbuff = vertex_create_buffer();
+        vertex_begin(vbuff, Camera.vertex_format);
+        vertex_position_3d(vbuff, self.line.start.x, self.line.start.y, self.line.start.z);
+        vertex_normal(vbuff, 0, 0, 1);
+        vertex_colour(vbuff, c_lime, 1);
+		vertex_texcoord(vbuff,0,1)
+        vertex_position_3d(vbuff, self.line.finish.x, self.line.finish.y, self.line.finish.z);
+        vertex_normal(vbuff, 0, 0, 1);
+        vertex_colour(vbuff, c_lime, 1);
+		vertex_texcoord(vbuff,0,1)
+        vertex_end(vbuff);
+        vertex_submit(vbuff, pr_linelist, -1);
+        vertex_delete_buffer(vbuff);
+	}
 }
