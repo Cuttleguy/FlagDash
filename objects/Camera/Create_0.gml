@@ -27,16 +27,16 @@ vertex_format = vertex_format_end();
 #endregion
 
 instance_create_depth(0, 0, 0, Player);
-playerCollider=PlayerCollider(new Vector3(0,5,0),new Vector3(0,0,0),5)
+playerCollider=new PlayerCollider(new Vector3(0,0,0),new Vector3(0,0,5),5)
 
 znear = 1;
 zfar = 32000;
 
-map = instance_create_depth(0, 0, depth, GameObject);
-map.model = load_obj("map.obj","map.mtl");
+//map = instance_create_depth(0, 0, depth, GameObject);
+//map.model = load_obj("map.obj","map.mtl");
 
-map.z = 1;
-_map_collider=new ColTestMesh(map.model)
+//map.z = 1;
+_map_collider=new ColTestMesh(load_obj("map.obj","map.mtl"))
 var buffer = buffer_load("shapes/capsule_middle.vbuff");
 capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
 buffer_delete(buffer);

@@ -52,7 +52,7 @@ if (z<0) {
 	zspeed = 0
 }
 
-
+Camera.playerCollider.set_position(x,y,z)
 zspeed-=0.5;
 
 
