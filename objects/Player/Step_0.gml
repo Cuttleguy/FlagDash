@@ -41,9 +41,18 @@ if (window_mouse_get_locked()) {
 
 //gravity
 
-if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
+//flying mode
+if (keyboard_check_pressed(vk_space)) {
 	zspeed = 6;
 }
+
+if (keyboard_check_pressed(ord("Z"))) {
+	zspeed = -6
+}
+	
+//if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
+	//zspeed = 6;
+//}
 
 z+=zspeed;
 
@@ -53,7 +62,7 @@ if (z<0) {
 }
 
 Camera.playerCollider.set_position(x,y,z)
-zspeed-=0.5;
+//zspeed-=0.5;
 
 
 
