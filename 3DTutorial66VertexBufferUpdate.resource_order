@@ -3,6 +3,9 @@
   "ResourceOrderSettings": [
     {"name":"Spr_ts","order":2,"path":"sprites/Spr_ts/Spr_ts.yy",},
     {"name":"TileSet1","order":1,"path":"tilesets/TileSet1/TileSet1.yy",},
+    {"name":"Spr_jump","order":5,"path":"sprites/Spr_jump/Spr_jump.yy",},
+    {"name":"Spr_extra_range","order":6,"path":"sprites/Spr_extra_range/Spr_extra_range.yy",},
     {"name":"PlayerCollider","order":3,"path":"scripts/PlayerCollider/PlayerCollider.yy",},
+    {"name":"Spr_speed","order":4,"path":"sprites/Spr_speed/Spr_speed.yy",},
   ],
 }
