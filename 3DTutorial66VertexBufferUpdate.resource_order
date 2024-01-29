@@ -6,6 +6,8 @@
     {"name":"Spr_jump","order":5,"path":"sprites/Spr_jump/Spr_jump.yy",},
     {"name":"Spr_extra_range","order":6,"path":"sprites/Spr_extra_range/Spr_extra_range.yy",},
     {"name":"PlayerCollider","order":3,"path":"scripts/PlayerCollider/PlayerCollider.yy",},
+    {"name":"spr_player_flag","order":8,"path":"sprites/spr_player_flag/spr_player_flag.yy",},
+    {"name":"spr_alien_flag","order":7,"path":"sprites/spr_alien_flag/spr_alien_flag.yy",},
     {"name":"Spr_speed","order":4,"path":"sprites/Spr_speed/Spr_speed.yy",},
   ],
 }
