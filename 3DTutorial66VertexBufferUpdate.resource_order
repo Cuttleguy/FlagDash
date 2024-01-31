@@ -61,6 +61,8 @@
     {"name":"rmColmeshDemo3","order":1,"path":"rooms/rmColmeshDemo3/rmColmeshDemo3.yy",},
     {"name":"rmColmeshDemo4","order":1,"path":"rooms/rmColmeshDemo4/rmColmeshDemo4.yy",},
     {"name":"sh_colmesh_world","order":3,"path":"shaders/sh_colmesh_world/sh_colmesh_world.yy",},
+    {"name":"spr_player_flag","order":8,"path":"sprites/spr_player_flag/spr_player_flag.yy",},
+    {"name":"spr_alien_flag","order":7,"path":"sprites/spr_alien_flag/spr_alien_flag.yy",},
     {"name":"Spr_speed","order":4,"path":"sprites/Spr_speed/Spr_speed.yy",},
     {"name":"oColmeshDemoRampRight","order":3,"path":"objects/oColmeshDemoRampRight/oColmeshDemoRampRight.yy",},
     {"name":"sSpinningCube","order":9,"path":"sprites/sSpinningCube/sSpinningCube.yy",},
