@@ -28,4 +28,5 @@ scr_draw_all_the_stuff();
 
 shader_reset();
 playerCollider.draw()
-_map_collider.draw()
+//_map_collider.draw()
+//col1.draw()

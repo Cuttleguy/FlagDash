@@ -430,24 +430,24 @@ function ColTestMesh(vbuff) constructor {
         var dy = 0;
         var dz = 0;
         
-        //if (keyboard_check(vk_left)) {
-        //    dx--;
-        //}
-        //if (keyboard_check(vk_right)) {
-        //    dx++;
-        //}
-        //if (keyboard_check(vk_up)) {
-        //    dy--;
-        //}
-        //if (keyboard_check(vk_down)) {
-        //    dy++;
-        //}
-        //if (keyboard_check(vk_pageup)) {
-        //    dz--;
-        //}
-        //if (keyboard_check(vk_pagedown)) {
-        //    dz++;
-        //}
+        if (keyboard_check(vk_left)) {
+            dx--;
+        }
+        if (keyboard_check(vk_right)) {
+            dx++;
+        }
+        if (keyboard_check(vk_up)) {
+            dy--;
+        }
+        if (keyboard_check(vk_down)) {
+            dy++;
+        }
+        if (keyboard_check(vk_pageup)) {
+            dz--;
+        }
+        if (keyboard_check(vk_pagedown)) {
+            dz++;
+        }
         self.offset.x += dx;
         self.offset.y += dy;
         self.offset.z += dz;
@@ -491,8 +491,8 @@ function ColTestMesh(vbuff) constructor {
 function ColTestModel(vbuff, triangles) constructor {
     var t0 = get_timer();
     
-    self.position = new Vector3(RANDOM_POSITION, RANDOM_POSITION, RANDOM_POSITION);
-    self.rotation = new Vector3(RANDOM_ROTATION, RANDOM_ROTATION, RANDOM_ROTATION);
+    self.position = new Vector3(0,0, 0);
+    self.rotation = new Vector3(0, 0,0);
     
     var rotation_matrix = new Matrix4(matrix_build(0, 0, 0, self.rotation.x, self.rotation.y, self.rotation.z, 1, 1, 1)).GetOrientationMatrix();
     

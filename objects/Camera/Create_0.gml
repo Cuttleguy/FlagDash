@@ -26,47 +26,71 @@ vertex_format_add_color();
 vertex_format = vertex_format_end();
 #endregion
 
-instance_create_depth(0, 0, 0, Player);
-playerCollider=new PlayerCollider(new Vector3(0,0,0),new Vector3(0,0,5),5)
+instance_create_depth(100, 100, 0, Player);
+playerCollider=new PlayerCollider(new Vector3(100,100,1),new Vector3(100,100,100),100)
 
 znear = 1;
 zfar = 32000;
+mapCol=new colmesh()
+M = colmesh_matrix_build(0, 0, 0, 0, 0, 0, 1, 1, 1);
 
-//map = instance_create_depth(0, 0, depth, GameObject);
-//map.model = load_obj("map.obj","map.mtl");
 
-//map.z = 1;
-_map_collider=new ColTestMesh(load_obj("map.obj","map.mtl"))
-var buffer = buffer_load("shapes/capsule_middle.vbuff");
-capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
-buffer_delete(buffer);
-
-var buffer = buffer_load("shapes/capsule_end.vbuff");
-capsule_end = vertex_create_buffer_from_buffer(buffer, vertex_format);
-buffer_delete(buffer);
-col1=new ColTestCapsule(capsule_end,capsule_middle)
-tilemap_vb = tilemap_to_vertex_buffer("GroundTiles", vertex_format);
-//var buffer = buffer_load("meshes/maps.vbuff");
-//var vertex_size = 28;
-//tree_vertices = [];
-//for (var i = 0, n = buffer_get_size(buffer); i < n; i += vertex_size * 3) {
-//    array_push(tree_vertices, new ColTriangle(
-//        new Vector3(
-//            buffer_peek(buffer, i + 0 * vertex_size + 0, buffer_f32),
-//            buffer_peek(buffer, i + 0 * vertex_size + 4, buffer_f32),
-//            buffer_peek(buffer, i + 0 * vertex_size + 8, buffer_f32)
-//        ),
-//        new Vector3(
-//            buffer_peek(buffer, i + 1 * vertex_size + 0, buffer_f32),
-//            buffer_peek(buffer, i + 1 * vertex_size + 4, buffer_f32),
-//            buffer_peek(buffer, i + 1 * vertex_size + 8, buffer_f32)
-//        ),
-//        new Vector3(
-//            buffer_peek(buffer, i + 2 * vertex_size + 0, buffer_f32),
-//            buffer_peek(buffer, i + 2 * vertex_size + 4, buffer_f32),
-//            buffer_peek(buffer, i + 2 * vertex_size + 8, buffer_f32)
-//        )
-//    ));
-//}
-//tree = vertex_create_buffer_from_buffer(buffer, vertex_format);
+map = instance_create_depth(0, 0, depth, GameObject);
+//var buffer = buffer_load("shapes/tree.vbuff");
+//capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
 //buffer_delete(buffer);
+map.model = load_obj("map.obj","map.mtl");
+var buffer=buffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
+mapCol.addMesh("map.obj",M)
+mapCol.addShape(new colmesh_cube(100,100,0,20,20,20))
+buffer_delete(buffer)
+map.z = 1
+//var buffer= buffer_load("shapes/aabb.vbuff");
+//obb=vertex_create_buffer_from_buffer(buffer,vertex_format)
+//abcd=new ColTestAABB(obb)
+//var buffer = buffer_load("shapes/capsule_middle.vbuff");
+//capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
+//buffer_delete(buffer);
+
+//var buffer = buffer_load("shapes/capsule_end.vbuff");
+//capsule_end = vertex_create_buffer_from_buffer(buffer, vertex_format);
+//buffer_delete(buffer);
+//var buffer = buffer_load("meshes/map.vbuff");
+//mapmesh=vertex_create_buffer_from_buffer(buffer,vertex_format)
+//buffer_delete(buffer)
+//col1=new ColTestCapsule(capsule_end,capsule_middle)
+
+tilemap_vb = tilemap_to_vertex_buffer("GroundTiles", vertex_format);
+var data = buffer_create_from_vertex_buffer(map.model, buffer_fixed, 1);
+var vertex_size = 28;
+triangle_array = array_create(buffer_get_size(data) / vertex_size / 3);
+for (var i = 0, n = array_length(triangle_array); i < n; i++) {
+    triangle_array[i] = new ColTriangle(
+        new Vector3(
+            buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 0, buffer_f32),
+            buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 4, buffer_f32),
+            buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 8, buffer_f32)
+        ),
+        new Vector3(
+            buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 0, buffer_f32),
+            buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 4, buffer_f32),
+            buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 8, buffer_f32)
+        ),
+        new Vector3(
+            buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 0, buffer_f32),
+            buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 4, buffer_f32),
+            buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 8, buffer_f32)
+        )
+    );
+}
+//for(var i=0,n=array_length(triangle_array); i <n; i++){
+
+//}
+buffer_delete(data);
+
+
+
+_map_collider=new ColTransformedModel(new ColMesh(triangle_array),new Vector3(100,100,501))
+//_map_collider=new ColTestModel(map.model,triangle_array)
+var regionSize = 120; //120 is a magic number I chose that fit well for my player size and level complexity. It may have to be different for your game!
+mapCol.subdivide(regionSize);

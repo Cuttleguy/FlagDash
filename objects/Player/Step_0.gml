@@ -42,17 +42,17 @@ if (window_mouse_get_locked()) {
 //gravity
 
 //flying mode
-if (keyboard_check_pressed(vk_space)) {
-	zspeed = 6;
-}
-
-if (keyboard_check_pressed(ord("Z"))) {
-	zspeed = -6
-}
-	
-//if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
+//if (keyboard_check_pressed(vk_space)) {
 	//zspeed = 6;
 //}
+
+//if (keyboard_check_pressed(ord("Z"))) {
+	//zspeed = -6
+//}
+	
+if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
+	zspeed = 6;
+}
 
 z+=zspeed;
 
@@ -62,10 +62,22 @@ if (z<0) {
 }
 
 Camera.playerCollider.set_position(x,y,z)
-//zspeed-=0.5;
+zspeed-=0.5;
 
 
 
 if (keyboard_check_pressed(vk_tab)) {
     window_mouse_set_locked(!window_mouse_get_locked());
 }
+
+collider.x = x;
+collider.y = y;
+collider.z = z;
+
+//Make the collider avoid the colmesh
+collider.avoid(Camera.mapCol);
+
+//Copy the coordinates of the collider back to the player
+x = collider.x;
+y = collider.y;
+z = collider.z;
