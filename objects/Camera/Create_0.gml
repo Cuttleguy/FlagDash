@@ -39,11 +39,12 @@ map = instance_create_depth(0, 0, depth, GameObject);
 //var buffer = buffer_load("shapes/tree.vbuff");
 //capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
 //buffer_delete(buffer);
-map.model = load_obj("map.obj","map.mtl");
-var buffer=buffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
+var vbuffer=vertex_create_buffer_from_buffer(colmesh_load_obj_to_buffer("map.obj"),vertex_format)
+map.model = vbuffer
+//var buffer=buffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
 mapCol.addMesh("map.obj",M)
 mapCol.addShape(new colmesh_cube(100,100,0,20,20,20))
-buffer_delete(buffer)
+//buffer_delete(buffer)
 map.z = 1
 //var buffer= buffer_load("shapes/aabb.vbuff");
 //obb=vertex_create_buffer_from_buffer(buffer,vertex_format)
