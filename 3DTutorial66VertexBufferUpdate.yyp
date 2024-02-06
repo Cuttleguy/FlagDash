@@ -141,6 +141,7 @@
     {"id":{"name":"oColmeshDemoCube","path":"objects/oColmeshDemoCube/oColmeshDemoCube.yy",},},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
     {"id":{"name":"sCube","path":"sprites/sCube/sCube.yy",},},
+    {"id":{"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},},
     {"id":{"name":"Col_Shape_Triangle","path":"scripts/Col_Shape_Triangle/Col_Shape_Triangle.yy",},},
     {"id":{"name":"Col_Octree","path":"scripts/Col_Octree/Col_Octree.yy",},},
     {"id":{"name":"oColmeshDemo4","path":"objects/oColmeshDemo4/oColmeshDemo4.yy",},},

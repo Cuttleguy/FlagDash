@@ -49,6 +49,7 @@
     {"name":"sRampRight","order":5,"path":"sprites/sRampRight/sRampRight.yy",},
     {"name":"oColmeshDemoCube","order":1,"path":"objects/oColmeshDemoCube/oColmeshDemoCube.yy",},
     {"name":"sCube","order":2,"path":"sprites/sCube/sCube.yy",},
+    {"name":"Sprite25","order":8,"path":"sprites/Sprite25/Sprite25.yy",},
     {"name":"oColmeshDemoSpinningBlockZ","order":7,"path":"objects/oColmeshDemoSpinningBlockZ/oColmeshDemoSpinningBlockZ.yy",},
     {"name":"sh_colmesh_debug","order":5,"path":"shaders/sh_colmesh_debug/sh_colmesh_debug.yy",},
     {"name":"oColmeshDemoCylinder","order":2,"path":"objects/oColmeshDemoCylinder/oColmeshDemoCylinder.yy",},
