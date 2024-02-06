@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.154388,
+  "duration": 1.149388,
   "parent": {
     "name": "Demo",
     "path": "folders/ColMesh/Demo.yy",

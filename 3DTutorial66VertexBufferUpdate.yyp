@@ -49,6 +49,8 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"TestWorld.obj","CopyToMask":-1,"filePath":"datafiles/ColMesh Demo",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"map.mtl","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"map.obj","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"map2.mtl","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"map2.obj","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"merry_mtl.mtl","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"merry_mtl.obj","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"merry.d3d","CopyToMask":-1,"filePath":"datafiles",},
