@@ -26,19 +26,19 @@ vertex_format_add_color();
 vertex_format = vertex_format_end();
 #endregion
 
-instance_create_depth(900, 900, 0, Player);
+instance_create_depth(900, 900, 60, Player);
 //playerCollider=new PlayerCollider(new Vector3(100,100,1),new Vector3(100,100,100),100)
 
 znear = 1;
 zfar = 32000;
 mapCol=new colmesh()
-M = colmesh_matrix_build(-9, -11.625, -303, 0, 0, 90, 1, 1, 1);
+M = colmesh_matrix_build(0, 0, 0, 0, 0, 180, 1, 1, 1);
 
 
 map = instance_create_depth(0, 0, depth, GameObject);
 map.model = load_obj("map2.obj","map2.mtl")
 map.z = 1
-
+//mapCol.addShape(new colmesh_cube(900,900,0,100,100,100))
 
 
 
