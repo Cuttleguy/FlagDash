@@ -30,6 +30,8 @@
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"barrel.d3d","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"blue_flag.mtl","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"blue_flag.obj","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Car_chassis.obj","CopyToMask":-1,"filePath":"datafiles/ColMesh Demo",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Car_wheel.obj","CopyToMask":-1,"filePath":"datafiles/ColMesh Demo",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Car_windows.obj","CopyToMask":-1,"filePath":"datafiles/ColMesh Demo",},

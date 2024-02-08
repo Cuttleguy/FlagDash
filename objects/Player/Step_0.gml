@@ -37,6 +37,7 @@ if (window_mouse_get_locked()) {
     x += dx;
     y += dy;
     #endregion
+	
 }
 
 //gravity
