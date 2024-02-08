@@ -8,7 +8,7 @@
 
 if (keyboard_check(vk_shift)){
 		if(collider.checkForCollision(Camera.blueFlagCol)){
-			draw_text_colour(32, 250, "picking", c_purple, c_purple, c_purple, c_purple, 1);
+			draw_text_colour(32, 250, "Picking Up Flag", c_purple, c_purple, c_purple, c_purple, 1);
 		}
 		
 	}
