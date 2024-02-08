@@ -74,7 +74,7 @@ collider.z = z;
 
 //Make the collider avoid the colmesh
 collider.avoid(Camera.mapCol);
-
+//collider.avoid(Camera.blueFlagCol);
 //Copy the coordinates of the collider back to the player
 x = collider.x;
 y = collider.y;
