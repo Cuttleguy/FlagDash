@@ -42,18 +42,15 @@ if (window_mouse_get_locked()) {
 
 //gravity
 
-//flying mode
-//if (keyboard_check_pressed(vk_space)) {
-	//zspeed = 6;
-//}
-
-//if (keyboard_check_pressed(ord("Z"))) {
-	//zspeed = -6
-//}
-	
-if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
+//inijump mode
+if (keyboard_check_pressed(vk_space)) {
 	zspeed = 6;
 }
+
+	
+//if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
+	//zspeed = 6;
+//}
 
 z+=zspeed;
 
