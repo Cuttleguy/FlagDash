@@ -57,6 +57,7 @@
     {"name":"sh_colmesh_debug","order":5,"path":"shaders/sh_colmesh_debug/sh_colmesh_debug.yy",},
     {"name":"oColmeshDemoCylinder","order":2,"path":"objects/oColmeshDemoCylinder/oColmeshDemoCylinder.yy",},
     {"name":"sCylinder","order":3,"path":"sprites/sCylinder/sCylinder.yy",},
+    {"name":"Menu_Manager","order":14,"path":"objects/Menu_Manager/Menu_Manager.yy",},
     {"name":"oColmeshDemoRampUp","order":4,"path":"objects/oColmeshDemoRampUp/oColmeshDemoRampUp.yy",},
     {"name":"oColmeshDemo5Tree","order":1,"path":"objects/oColmeshDemo5Tree/oColmeshDemo5Tree.yy",},
     {"name":"obj_button_play","order":13,"path":"objects/obj_button_play/obj_button_play.yy",},
