@@ -26,8 +26,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Primitive objects","folderPath":"folders/ColMesh/Demo/Primitive objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/ColMesh/Demo/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/ColMesh/Demo/Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test stuff","folderPath":"folders/Test stuff.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test stuff","folderPath":"folders/Test stuff.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"barrel.d3d","CopyToMask":-1,"filePath":"datafiles",},
