@@ -198,6 +198,7 @@
     {"id":{"name":"Map1","path":"rooms/Map1/Map1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Map1","path":"rooms/Map1/Map1.yy",},},
     {"roomId":{"name":"rmColmeshDemo1","path":"rooms/rmColmeshDemo1/rmColmeshDemo1.yy",},},
     {"roomId":{"name":"Testroom","path":"rooms/Testroom/Testroom.yy",},},
@@ -205,7 +206,6 @@
     {"roomId":{"name":"rmColmeshDemo3","path":"rooms/rmColmeshDemo3/rmColmeshDemo3.yy",},},
     {"roomId":{"name":"rmColmeshDemo4","path":"rooms/rmColmeshDemo4/rmColmeshDemo4.yy",},},
     {"roomId":{"name":"rmColmeshDemo5","path":"rooms/rmColmeshDemo5/rmColmeshDemo5.yy",},},
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
