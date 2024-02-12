@@ -59,6 +59,7 @@
     {"name":"sCylinder","order":3,"path":"sprites/sCylinder/sCylinder.yy",},
     {"name":"oColmeshDemoRampUp","order":4,"path":"objects/oColmeshDemoRampUp/oColmeshDemoRampUp.yy",},
     {"name":"oColmeshDemo5Tree","order":1,"path":"objects/oColmeshDemo5Tree/oColmeshDemo5Tree.yy",},
+    {"name":"Game_Manager","order":9,"path":"objects/Game_Manager/Game_Manager.yy",},
     {"name":"obj_button_play","order":13,"path":"objects/obj_button_play/obj_button_play.yy",},
     {"name":"sRampUp","order":6,"path":"sprites/sRampUp/sRampUp.yy",},
     {"name":"oColmeshDemoSphere","order":5,"path":"objects/oColmeshDemoSphere/oColmeshDemoSphere.yy",},
