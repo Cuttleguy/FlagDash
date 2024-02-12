@@ -155,6 +155,7 @@
     {"id":{"name":"oColmeshDemoRampUp","path":"objects/oColmeshDemoRampUp/oColmeshDemoRampUp.yy",},},
     {"id":{"name":"oColmeshDemo5Tree","path":"objects/oColmeshDemo5Tree/oColmeshDemo5Tree.yy",},},
     {"id":{"name":"Testroom","path":"rooms/Testroom/Testroom.yy",},},
+    {"id":{"name":"Game_Manager","path":"objects/Game_Manager/Game_Manager.yy",},},
     {"id":{"name":"GameObject","path":"objects/GameObject/GameObject.yy",},},
     {"id":{"name":"sRampUp","path":"sprites/sRampUp/sRampUp.yy",},},
     {"id":{"name":"oColmeshDemoSphere","path":"objects/oColmeshDemoSphere/oColmeshDemoSphere.yy",},},
