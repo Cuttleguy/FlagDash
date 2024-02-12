@@ -7,4 +7,4 @@
 
 
 
-//draw_text_colour(32, 250, "Picking Up Flag", c_purple, c_purple, c_purple, c_purple, 1);
+
