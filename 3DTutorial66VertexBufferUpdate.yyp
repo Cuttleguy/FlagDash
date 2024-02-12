@@ -26,8 +26,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Primitive objects","folderPath":"folders/ColMesh/Demo/Primitive objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/ColMesh/Demo/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/ColMesh/Demo/Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test stuff","folderPath":"folders/Test stuff.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Test stuff","folderPath":"folders/Test stuff.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"barrel.d3d","CopyToMask":-1,"filePath":"datafiles",},
@@ -155,6 +155,7 @@
     {"id":{"name":"sh_colmesh_debug","path":"shaders/sh_colmesh_debug/sh_colmesh_debug.yy",},},
     {"id":{"name":"oColmeshDemoCylinder","path":"objects/oColmeshDemoCylinder/oColmeshDemoCylinder.yy",},},
     {"id":{"name":"sCylinder","path":"sprites/sCylinder/sCylinder.yy",},},
+    {"id":{"name":"Menu_Manager","path":"objects/Menu_Manager/Menu_Manager.yy",},},
     {"id":{"name":"obj_demo","path":"objects/obj_demo/obj_demo.yy",},},
     {"id":{"name":"oColmeshDemoRampUp","path":"objects/oColmeshDemoRampUp/oColmeshDemoRampUp.yy",},},
     {"id":{"name":"oColmeshDemo5Tree","path":"objects/oColmeshDemo5Tree/oColmeshDemo5Tree.yy",},},
