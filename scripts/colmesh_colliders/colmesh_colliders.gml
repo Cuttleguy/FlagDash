@@ -146,11 +146,14 @@ function colmesh_collider_capsule(x, y, z, xup, yup, zup, radius, height, slopeA
 	/// @func checkForCollisionRegion(colMesh, region)
 	static checkForCollisionRegion = function(colMesh, region)
 	{
+		if(is_undefined(region)){
+			return false;
+		}
 		//Returns whether or not the given capsule collides with the given region
 		var i = ds_list_size(region);
 		repeat (i)
 		{
-			var col = _getShape(region[| --i]).capsuleCollision(x, y, z, xup, yup, zup, radius, height);
+			var col = colMesh._getShape(region[| --i]).capsuleCollision(x, y, z, xup, yup, zup, radius, height);
 			if (col) return true;
 		}
 		return false;
