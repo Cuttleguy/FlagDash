@@ -72,7 +72,7 @@ mapCol.addMesh("map2.obj",mapM)
 //buffer_delete(buffer)
 //col1=new ColTestCapsule(capsule_end,capsule_middle)
 
-tilemap_vb = tilemap_to_vertex_buffer("GroundTiles", vertex_format);
+//tilemap_vb = tilemap_to_vertex_buffer("TileSet1", vertex_format);
 //var data = buffer_create_from_vertex_buffer(map.model, buffer_fixed, 1);
 //var vertex_size = 28;
 //triangle_array = array_create(buffer_get_size(data) / vertex_size / 3);
