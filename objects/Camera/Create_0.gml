@@ -26,7 +26,7 @@ vertex_format_add_color();
 vertex_format = vertex_format_end();
 #endregion
 
-//instance_create_depth(650, 0, 1, Player)
+instance_create_depth(650, 0, 1, Player)
 //playerCollider=new PlayerCollider(new Vector3(100,100,1),new Vector3(100,100,100),100)
 
 znear = 1;
@@ -46,59 +46,9 @@ blue_flag.z=1
 blueFlagCol.addMesh("blue_flag.obj",blueFlagM);
 
 
-//var buffer = buffer_load("shapes/tree.vbuff");
-//capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
-//buffer_delete(buffer);
-//var vbuffer=vertex_create_buffer_from_buffer(colmesh_load_obj_to_buffer("map.obj"),vertex_format)
-
-//var buffer=buffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
+//uffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
 mapCol.addMesh("map2.obj",mapM)
 
-//mapCol.addShape(new colmesh_cube(100,100,0,20,20,20))
-//buffer_delete(buffer)
-
-//var buffer= buffer_load("shapes/aabb.vbuff");
-//obb=vertex_create_buffer_from_buffer(buffer,vertex_format)
-//abcd=new ColTestAABB(obb)
-//var buffer = buffer_load("shapes/capsule_middle.vbuff");
-//capsule_middle = vertex_create_buffer_from_buffer(buffer, vertex_format);
-//buffer_delete(buffer);
-
-//var buffer = buffer_load("shapes/capsule_end.vbuff");
-//capsule_end = vertex_create_buffer_from_buffer(buffer, vertex_format);
-//buffer_delete(buffer);
-//var buffer = buffer_load("meshes/map.vbuff");
-//mapmesh=vertex_create_buffer_from_buffer(buffer,vertex_format)
-//buffer_delete(buffer)
-//col1=new ColTestCapsule(capsule_end,capsule_middle)
-
-//tilemap_vb = tilemap_to_vertex_buffer("TileSet1", vertex_format);
-//var data = buffer_create_from_vertex_buffer(map.model, buffer_fixed, 1);
-//var vertex_size = 28;
-//triangle_array = array_create(buffer_get_size(data) / vertex_size / 3);
-//for (var i = 0, n = array_length(triangle_array); i < n; i++) {
-//    triangle_array[i] = new ColTriangle(
-//        new Vector3(
-//            buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 0, buffer_f32),
-//            buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 4, buffer_f32),
-//            buffer_peek(data, i * vertex_size * 3 + 0 * vertex_size + 8, buffer_f32)
-//        ),
-//        new Vector3(
-//            buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 0, buffer_f32),
-//            buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 4, buffer_f32),
-//            buffer_peek(data, i * vertex_size * 3 + 1 * vertex_size + 8, buffer_f32)
-//        ),
-//        new Vector3(
-//            buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 0, buffer_f32),
-//            buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 4, buffer_f32),
-//            buffer_peek(data, i * vertex_size * 3 + 2 * vertex_size + 8, buffer_f32)
-//        )
-//    );
-//}
-////for(var i=0,n=array_length(triangle_array); i <n; i++){
-
-////}
-//buffer_delete(data);
 
 
 
