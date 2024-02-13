@@ -43,6 +43,7 @@
     {"name":"oColmeshDemoTorus","order":11,"path":"objects/oColmeshDemoTorus/oColmeshDemoTorus.yy",},
     {"name":"PlayerCollider","order":3,"path":"scripts/PlayerCollider/PlayerCollider.yy",},
     {"name":"colmesh_colliders","order":3,"path":"scripts/colmesh_colliders/colmesh_colliders.yy",},
+    {"name":"Rollback","order":15,"path":"scripts/Rollback/Rollback.yy",},
     {"name":"colmesh_complex","order":1,"path":"scripts/colmesh_complex/colmesh_complex.yy",},
     {"name":"rmColmeshDemo2","order":1,"path":"rooms/rmColmeshDemo2/rmColmeshDemo2.yy",},
     {"name":"sRotatingBlock","order":7,"path":"sprites/sRotatingBlock/sRotatingBlock.yy",},

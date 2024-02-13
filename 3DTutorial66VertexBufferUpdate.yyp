@@ -129,6 +129,7 @@
     {"id":{"name":"oColmeshDemoTorus","path":"objects/oColmeshDemoTorus/oColmeshDemoTorus.yy",},},
     {"id":{"name":"PlayerCollider","path":"scripts/PlayerCollider/PlayerCollider.yy",},},
     {"id":{"name":"colmesh_colliders","path":"scripts/colmesh_colliders/colmesh_colliders.yy",},},
+    {"id":{"name":"Rollback","path":"scripts/Rollback/Rollback.yy",},},
     {"id":{"name":"oColmeshDemoCapsule","path":"objects/oColmeshDemoCapsule/oColmeshDemoCapsule.yy",},},
     {"id":{"name":"colmesh_complex","path":"scripts/colmesh_complex/colmesh_complex.yy",},},
     {"id":{"name":"rmColmeshDemo2","path":"rooms/rmColmeshDemo2/rmColmeshDemo2.yy",},},
