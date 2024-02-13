@@ -2,7 +2,7 @@
 ////// You can write your code in this editor
 
 
-
+if(!rollback_game_running) exit;
 
 
 ////if playerCollider.CheckMesh(_map_collider){

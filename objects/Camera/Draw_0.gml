@@ -1,5 +1,5 @@
 /// @description Draw the 3D world
-
+if(!rollback_game_running) exit;
 draw_clear(c_black);
 
 // 3D projections require a view and projection matrix

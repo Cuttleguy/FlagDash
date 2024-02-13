@@ -7,3 +7,4 @@
 //show_debug_message(playerCollider.line.start.x)
 //show_debug_message(playerCollider.line.start.y)
 //show_debug_log(triangle_)
+if(!rollback_game_running) exit;

@@ -31,31 +31,6 @@ instance_create_depth(650, 0, 1, Player)
 
 znear = 1;
 zfar = 32000;
-mapCol=new colmesh()
-mapM = colmesh_matrix_build(0, 0, 0, 0, 0, 180, 1, 1, 1);
-blueFlagM=colmesh_matrix_build(0,0,1,0,0,180,1.5,1.5,1)
-blueFlagCol=new colmesh()
 
-map = instance_create_depth(0, 0, depth, GameObject);
-map.model = load_obj("map2.obj","map2.mtl")
-map.z = 1
-//mapCol.addShape(new colmesh_cube(900,900,0,100,100,100))
-blue_flag = instance_create_depth(0,0, depth,GameObject);
-blue_flag.model=load_obj("blue_flag.obj","blue_flag.mtl");
-blue_flag.z=1
-blueFlagCol.addMesh("blue_flag.obj",blueFlagM);
-
-
-//uffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
-mapCol.addMesh("map2.obj",mapM)
-
-
-
-
-//_map_collider=new ColTransformedModel(new ColMesh(triangle_array),new Vector3(100,100,501))
-//_map_collider=new ColTestModel(map.model,triangle_array)
-var regionSize = 100; //120 is a magic number I chose that fit well for my player size and level complexity. It may have to be different for your game!
-mapCol.subdivide(regionSize);
-blueFlagCol.subdivide(regionSize);
 
 
