@@ -178,7 +178,6 @@
     {"id":{"name":"Col_Tests","path":"scripts/Col_Tests/Col_Tests.yy",},},
     {"id":{"name":"Spr_speed","path":"sprites/Spr_speed/Spr_speed.yy",},},
     {"id":{"name":"oColmeshDemo5","path":"objects/oColmeshDemo5/oColmeshDemo5.yy",},},
-    {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"oColmeshDemoRampRight","path":"objects/oColmeshDemoRampRight/oColmeshDemoRampRight.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"sSpinningCube","path":"sprites/sSpinningCube/sSpinningCube.yy",},},
