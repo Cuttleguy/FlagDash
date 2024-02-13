@@ -1,4 +1,4 @@
-rollback_define_player(Player, “Instances”);
+rollback_define_player(Player,"Instances");
 
 rollback_define_input({
         left : ord("A"), // use ord(“A”) for letter keys
