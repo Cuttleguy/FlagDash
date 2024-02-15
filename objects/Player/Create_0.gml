@@ -15,3 +15,5 @@ spdY = 0;
 spdZ = 0;
 ground = false;
 collider = new colmesh_collider_capsule(x, y, z, 0, 0, 1, radius, height, 40, 3);
+show_debug_log(true)
+show_debug_message("Player Created")
