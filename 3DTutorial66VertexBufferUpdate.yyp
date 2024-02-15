@@ -80,7 +80,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"Col_Transformed_Model","path":"scripts/Col_Transformed_Model/Col_Transformed_Model.yy",},},
@@ -90,7 +90,6 @@
     {"id":{"name":"Col_Shape_Plane","path":"scripts/Col_Shape_Plane/Col_Shape_Plane.yy",},},
     {"id":{"name":"Col_Matrix","path":"scripts/Col_Matrix/Col_Matrix.yy",},},
     {"id":{"name":"texCar","path":"sprites/texCar/texCar.yy",},},
-    {"id":{"name":"load_obj_mtl","path":"scripts/load_obj_mtl/load_obj_mtl.yy",},},
     {"id":{"name":"Col_Shape_Sphere","path":"scripts/Col_Shape_Sphere/Col_Shape_Sphere.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"scr_draw_all_the_stuff","path":"scripts/scr_draw_all_the_stuff/scr_draw_all_the_stuff.yy",},},
@@ -172,6 +171,7 @@
     {"id":{"name":"rmColmeshDemo3","path":"rooms/rmColmeshDemo3/rmColmeshDemo3.yy",},},
     {"id":{"name":"fnt_demo","path":"fonts/fnt_demo/fnt_demo.yy",},},
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
+    {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"rmColmeshDemo4","path":"rooms/rmColmeshDemo4/rmColmeshDemo4.yy",},},
     {"id":{"name":"Col_Heightmap","path":"scripts/Col_Heightmap/Col_Heightmap.yy",},},
     {"id":{"name":"sh_colmesh_world","path":"shaders/sh_colmesh_world/sh_colmesh_world.yy",},},

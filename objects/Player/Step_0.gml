@@ -1,5 +1,5 @@
 /// @description Insert description here
-
+if(!rollback_game_running) exit;
 if (window_mouse_get_locked()) {
     #region regular movement
     look_dir -= window_mouse_get_delta_x() / 6;
@@ -13,45 +13,42 @@ if (window_mouse_get_locked()) {
     var move_speed = 4;
     var dx = 0;
     var dy = 0;
-
-    if (keyboard_check(ord("A"))) {
+	var input=rollback_get_input(player_id_reference);
+	
+    if (input.left) {
         dx += dsin(look_dir) * move_speed;
         dy += dcos(look_dir) * move_speed;
     }
 
-    if (keyboard_check(ord("D"))) {
+    if (input.right) {
         dx -= dsin(look_dir) * move_speed;
         dy -= dcos(look_dir) * move_speed;
     }
 
-    if (keyboard_check(ord("W"))) {
+    if (input.up) {
         dx -= dcos(look_dir) * move_speed;
         dy += dsin(look_dir) * move_speed;
     }
 
-    if (keyboard_check(ord("S"))) {
+    if (input.down) {
         dx += dcos(look_dir) * move_speed;
         dy -= dsin(look_dir) * move_speed;
     }
   
     x += dx;
     y += dy;
-    #endregion
-	
-}
-
-//gravity
-
-//inijump mode
-if (keyboard_check_pressed(vk_space)) {
+	if (input.jump) {
 	zspeed = 6;
+	
 }
 
 	
 //if z<3 and zspeed<3 and (keyboard_check_pressed(vk_space)) {
 	//zspeed = 6;
 //}
-
+show_debug_message(x)
+show_debug_message(y)
+show_debug_message(z)
 z+=zspeed;
 
 if (z<0) {
@@ -62,20 +59,29 @@ if (z<0) {
 //Camera.playerCollider.set_position(x,y,z)
 zspeed-=0.5;
 
+    #endregion
+	
+	
+}
+
+//gravity
+
+//inijump mode
+
 
 
 if (keyboard_check_pressed(vk_tab)) {
     window_mouse_set_locked(!window_mouse_get_locked());
 }
 
-collider.x = x;
-collider.y = y;
-collider.z = z;
+//collider.x = x;
+//collider.y = y;
+//collider.z = z;
 
-//Make the collider avoid the colmesh
-collider.avoid(Camera.mapCol);
-//collider.avoid(Camera.blueFlagCol);
-//Copy the coordinates of the collider back to the player
-x = collider.x;
-y = collider.y;
-z = collider.z;
+////Make the collider avoid the colmesh
+//collider.avoid(Game_Manager.mapCol);
+////collider.avoid(Camera.blueFlagCol);
+////Copy the coordinates of the collider back to the player
+//x = collider.x;
+//y = collider.y;
+//z = collider.z;
