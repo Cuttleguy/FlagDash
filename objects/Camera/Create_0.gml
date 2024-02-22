@@ -18,7 +18,7 @@ gpu_set_cullmode(cull_counterclockwise);
 
 
 
-instance_create_depth(650, 0, 1, Player)
+
 //playerCollider=new PlayerCollider(new Vector3(100,100,1),new Vector3(100,100,100),100)
 
 znear = 1;

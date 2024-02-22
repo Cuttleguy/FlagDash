@@ -68,18 +68,26 @@ zspeed-=0.5;
 
 //inijump mode
 
+//mapCol=new colmesh()
+//mapM = colmesh_matrix_build(0, 0, 0, 0, 0, 180, 1, 1, 1);
+//mapCol.addMesh("map2.obj",mapM)
 
-
-if (keyboard_check_pressed(vk_tab)) {
-    window_mouse_set_locked(!window_mouse_get_locked());
-}
 
 collider.x = x;
 collider.y = y;
 collider.z = z;
-
+collider = new colmesh_collider_capsule(x, y, z, 0, 0, 1, radius, height, 40, 3);
 //Make the collider avoid the colmesh
+if(!Game_Manager.mapCol)
+{
+	show_debug_message("Null Map Collider")
+}
+else
+{
+	
+
 collider.avoid(Game_Manager.mapCol);
+}
 //collider.avoid(Camera.blueFlagCol);
 //Copy the coordinates of the collider back to the player
 x = collider.x;
