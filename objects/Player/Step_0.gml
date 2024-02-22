@@ -74,14 +74,14 @@ if (keyboard_check_pressed(vk_tab)) {
     window_mouse_set_locked(!window_mouse_get_locked());
 }
 
-//collider.x = x;
-//collider.y = y;
-//collider.z = z;
+collider.x = x;
+collider.y = y;
+collider.z = z;
 
-////Make the collider avoid the colmesh
-//collider.avoid(Game_Manager.mapCol);
-////collider.avoid(Camera.blueFlagCol);
-////Copy the coordinates of the collider back to the player
-//x = collider.x;
-//y = collider.y;
-//z = collider.z;
+//Make the collider avoid the colmesh
+collider.avoid(Game_Manager.mapCol);
+//collider.avoid(Camera.blueFlagCol);
+//Copy the coordinates of the collider back to the player
+x = collider.x;
+y = collider.y;
+z = collider.z;

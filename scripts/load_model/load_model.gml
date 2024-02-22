@@ -2,7 +2,7 @@
 function load_model(argument0) {
 
 	var model = vertex_create_buffer();
-	vertex_begin(model, Camera.vertex_format);
+	vertex_begin(model, Game_Manager.vertex_format);
 
 	var file = file_text_open_read(argument0);
 

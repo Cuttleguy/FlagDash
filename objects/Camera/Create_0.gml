@@ -16,15 +16,7 @@ gpu_set_cullmode(cull_counterclockwise);
 //view_mat = undefined;
 //proj_mat = undefined;
 
-#region vertex format setup
-// Vertex format: data must go into vertex buffers in the order defined by this
-vertex_format_begin();
-vertex_format_add_position_3d();
-vertex_format_add_normal();
-vertex_format_add_texcoord();
-vertex_format_add_color();
-vertex_format = vertex_format_end();
-#endregion
+
 
 instance_create_depth(650, 0, 1, Player)
 //playerCollider=new PlayerCollider(new Vector3(100,100,1),new Vector3(100,100,100),100)
@@ -39,10 +31,7 @@ player.player_id_reference=player_id
 
 
 
-map = instance_create_depth(0, 0, depth, GameObject);
-map.model = load_obj("map2.obj","map2.mtl")
-map.z = 1
-map.activated=true
+
 //mapCol.addShape(new colmesh_cube(900,900,0,100,100,100))
 //blue_flag = instance_create_depth(0,0, depth,GameObject);
 //blue_flag.model=load_obj("blue_flag.obj","blue_flag.mtl");
