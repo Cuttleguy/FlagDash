@@ -12,7 +12,8 @@ gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 
 gpu_set_cullmode(cull_counterclockwise);
-
+camera=undefined;
+camera_id=undefined;
 view_mat = undefined;
 proj_mat = undefined;
 
@@ -108,4 +109,5 @@ var regionSize = 100; //120 is a magic number I chose that fit well for my playe
 mapCol.subdivide(regionSize);
 blueFlagCol.subdivide(regionSize);
 
-
+endgame=false
+alarming=false

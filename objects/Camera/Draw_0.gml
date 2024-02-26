@@ -3,7 +3,7 @@
 draw_clear(c_black);
 
 // 3D projections require a view and projection matrix
-var camera = camera_get_active();
+camera = camera_get_active();
 var camera_distance = 160;
 
 var xfrom = Player.x;
