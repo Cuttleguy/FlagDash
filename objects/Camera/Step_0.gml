@@ -12,7 +12,7 @@ if (keyboard_check(vk_shift)){
 			endgame=true
 			alarming=true
 		
-			alarm[0]=game_get_speed(gamespeed_fps);
+			
 		}
 		
 	}

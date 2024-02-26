@@ -110,4 +110,5 @@ mapCol.subdivide(regionSize);
 blueFlagCol.subdivide(regionSize);
 
 endgame=false
+endalarm=-1
 alarming=false

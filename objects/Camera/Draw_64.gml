@@ -9,9 +9,9 @@
 ////	draw_text_colour(32, 100, "Shapes overlap!", c_purple, c_purple, c_purple, c_purple, 1);
 ////}
 
-//draw_text_colour(32, 100, mapCol.originX, c_purple, c_purple, c_purple, c_purple, 1);
-//draw_text_colour(32, 150, mapCol.originY, c_purple, c_purple, c_purple, c_purple, 1);
-//draw_text_colour(32, 200, mapCol.originZ, c_purple, c_purple, c_purple, c_purple, 1);
+draw_text_colour(32, 100, Player.x, c_purple, c_purple, c_purple, c_purple, 1);
+draw_text_colour(32, 150, Player.y, c_purple, c_purple, c_purple, c_purple, 1);
+draw_text_colour(32, 200, Player.z, c_purple, c_purple, c_purple, c_purple, 1);
 
 if(endgame&&alarming)
 {
@@ -19,6 +19,6 @@ if(endgame&&alarming)
 	if(alarm[0]==-1)
 	{
 		
-		
+		alarm[0]=60
 		
 }}
