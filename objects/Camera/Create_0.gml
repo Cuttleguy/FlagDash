@@ -27,7 +27,7 @@ vertex_format_add_color();
 vertex_format = vertex_format_end();
 #endregion
 
-instance_create_depth(650, 0, 1, Player);
+instance_create_depth(-650, 0, 1, Player);
 //playerCollider=new PlayerCollider(new Vector3(100,100,1),new Vector3(100,100,100),100)
 
 znear = 1;
