@@ -158,8 +158,9 @@ function load_obj(argument0, argument1) {
 					// Add the data to the vertex buffers
 					vertex_position_3d(model, xx, yy, zz);
 					vertex_normal(model, nx, ny, nz);
-					vertex_color(model, color, alpha);
 					vertex_texcoord(model, xtex, ytex);
+					vertex_color(model, color, alpha);
+					
 				}
 				break;
 			case "usemtl":

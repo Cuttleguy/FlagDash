@@ -38,7 +38,7 @@ blueFlagM=colmesh_matrix_build(0,0,1,0,0,180,1.5,1.5,1)
 blueFlagCol=new colmesh()
 
 map = instance_create_depth(0, 0, depth, GameObject);
-map.model = load_obj("map2.obj","map2.mtl")
+map.model = load_obj("map4.obj","map4.mtl")
 map.z = 1
 //mapCol.addShape(new colmesh_cube(900,900,0,100,100,100))
 blue_flag = instance_create_depth(0,0, depth,GameObject);
