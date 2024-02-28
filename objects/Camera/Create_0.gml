@@ -53,7 +53,7 @@ blueFlagCol.addMesh("blue_flag.obj",blueFlagM);
 //var vbuffer=vertex_create_buffer_from_buffer(colmesh_load_obj_to_buffer("map.obj"),vertex_format)
 
 //var buffer=buffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
-mapCol.addMesh("map2.obj",mapM)
+mapCol.addMesh("map4.obj",mapM)
 
 //mapCol.addShape(new colmesh_cube(100,100,0,20,20,20))
 //buffer_delete(buffer)

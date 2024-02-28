@@ -66,6 +66,9 @@ zspeed-=0.5;
 
 if (keyboard_check_pressed(vk_tab)) {
     window_mouse_set_locked(!window_mouse_get_locked());
+	var buffer =buffer_create_from_vertex_buffer(Camera.map.model,buffer_fixed,1)
+	var filename = get_save_filename("Vertex buffers|*.vbuff", "wall512x256x64.vbuff");
+	buffer_save(buffer,filename)
 }
 
 collider.x = x;
