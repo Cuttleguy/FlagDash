@@ -34,14 +34,14 @@ znear = 1;
 zfar = 32000;
 mapCol=new colmesh()
 mapM = colmesh_matrix_build(0, 0, 0, 0, 0, 180, 1, 1, 1);
-blueFlagM=colmesh_matrix_build(0,0,1,0,0,180,1.5,1.5,1)
+blueFlagM=colmesh_matrix_build(1015,-815,1,0,0,180,1.5,1.5,1)
 blueFlagCol=new colmesh()
 
 map = instance_create_depth(0, 0, depth, GameObject);
-map.model = load_obj("map4.obj","map4.mtl")
+map.model = load_obj("map2.obj","map2.mtl")
 map.z = 1
 //mapCol.addShape(new colmesh_cube(900,900,0,100,100,100))
-blue_flag = instance_create_depth(0,0, depth,GameObject);
+blue_flag = instance_create_depth(1015,-815, depth,GameObject);
 blue_flag.model=load_obj("blue_flag.obj","blue_flag.mtl");
 blue_flag.z=1
 blueFlagCol.addMesh("blue_flag.obj",blueFlagM);
@@ -53,7 +53,7 @@ blueFlagCol.addMesh("blue_flag.obj",blueFlagM);
 //var vbuffer=vertex_create_buffer_from_buffer(colmesh_load_obj_to_buffer("map.obj"),vertex_format)
 
 //var buffer=buffer_create_from_vertex_buffer(map.model,buffer_fixed,1)
-mapCol.addMesh("map4.obj",mapM)
+mapCol.addMesh("map2.obj",mapM)
 
 //mapCol.addShape(new colmesh_cube(100,100,0,20,20,20))
 //buffer_delete(buffer)
